@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Worksans-Regular";
+  src: url("../src/assets/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Kaushan-Script";
+  src: url("../src/assets/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+@font-face {
+  font-family: "Lora-Itallic";
+  src: url("../src/assets/fonts/Lora-Italic.ttf");
+}
+@font-face {
+  font-family: "Hind-Madurai";
+  src: url("../src/assets/fonts/HindMadurai-Regular.ttf");
+}
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
+
+@theme {
+  --font-worksans-regular: Worksans-regular, "sans-serif";
+  --font-kaushan-script: Kaushan-script, "sans-serif";
+  --font-lora-itallic: Lora-itallic, "sans-serif";
+  --font-hind-madurai: Hind-madurai, "sans-serif";
+}
+
+.loader {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #ff2df1;
+  border-top: 5px solid #636767;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@theme {
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+@theme {
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+}

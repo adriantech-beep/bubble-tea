@@ -1,0 +1,86 @@
+.slider {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+
+.testimonial {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 38em;
+  height: 26em;
+  padding: 1rem;
+}
+
+.sliderBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f17878;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  padding: 0rem 0.5rem;
+}
+
+.sliderBtnLeft {
+  left: 10px;
+}
+
+.sliderBtnRight {
+  right: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dotsDot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.dotsDotActive {
+  background-color: #333;
+}
+.text {
+  display: none;
+}
+@media (max-width: 650px) {
+  .testimonial {
+    max-width: 35em;
+    min-height: 28em;
+    padding: 1rem;
+    margin: 1.5em;
+  }
+  .sliderBtn {
+    top: 20%;
+    border: none;
+    font-size: 1.8rem;
+  }
+}
