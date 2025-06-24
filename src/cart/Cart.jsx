@@ -2,9 +2,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearCart, getCart, getTotalCartPrice } from "./cartSlice";
 import { Link } from "react-router-dom";
 
-import CartItem from "./Cartitem";
 import EmptyCart from "./EmptyCart";
 import Button from "../ui/Button";
+import CartItem from "./CartItem";
 
 function Cart() {
   const cart = useSelector(getCart);
