@@ -2,11 +2,15 @@ import { useSelector } from "react-redux";
 import Image from "../assets/bg.png";
 import CreateUser from "../user/CreateUser";
 import Button from "./Button";
+import BgImage from "../assets/colorful-paint-white.jpg";
 
 function Home() {
   const username = useSelector((state) => state.user.username);
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-full gap-2 sm:flex-row sm:justify-center md:items-center bg-[url(../../src/assets/colorful-paint-white.jpg)] bg-center bg-cover">
+    <div
+      className="flex flex-col items-center justify-center h-screen w-full gap-2 sm:flex-row sm:justify-center md:items-center bg-center bg-cover"
+      style={{ backgroundImage: `url(${BgImage})` }}
+    >
       <div className="flex items-center flex-col gap-4">
         <h1 className="animate-fade-in-scale text-5xl text-center font-worksans-regular sm:text-4xl md:text-7xl font-semibold text-stone-700 ">
           Bubble Tea
