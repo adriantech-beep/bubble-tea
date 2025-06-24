@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import EmptyCart from "./EmptyCart";
 import Button from "../ui/Button";
-import CartItem from "../cart/CartItem";
+import CartItem from "./CartItem";
 
 function Cart() {
   const cart = useSelector(getCart);
