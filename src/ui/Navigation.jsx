@@ -3,6 +3,7 @@ import Username from "../user/Username";
 import { useScroll } from "../contexts/ScrollProvider";
 import NavigationLink from "./NavigationLink";
 import { useState } from "react";
+import Logo from "../../public/logo.jpg";
 function Navigation() {
   const {
     scrollToProductDetails,
@@ -26,7 +27,7 @@ function Navigation() {
         className=" tracking-widest font-monsterrat-semibold text-pink-100"
       >
         <img
-          src="../../src/assets/logo.jpg"
+          src={Logo}
           className="w-12 sm:w-16 md:w-20 lg:w-18  rounded-full"
           alt="Logo"
         />
