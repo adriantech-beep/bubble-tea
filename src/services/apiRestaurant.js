@@ -1,9 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = "https://mronmilxkxaliqlvlkix.supabase.co";
-const supabaseKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1yb25taWx4a3hhbGlxbHZsa2l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4MzcwMDYsImV4cCI6MjA1NzQxMzAwNn0.LRNTSPLfList_5eu2rJFJ-X-87DRaylSeFsYjGsx51w";
-const supabase = createClient(supabaseUrl, supabaseKey);
+import { supabase } from "./supabase";
 
 export async function getMenu() {
   try {
